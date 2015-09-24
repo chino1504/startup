@@ -1,6 +1,6 @@
 var Movie = require('./movies.js');
 var Director = require('./director.js');
-var $ = require('./jquery-2.1.4.js');
+var $ = require('jquery');
 
 var alien = new Movie();
 var ridleyScott = new Director('Ridley Scott');

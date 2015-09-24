@@ -1,6 +1,6 @@
 
 var director = require('./director.js');
-
+var $ = require('./jquery-2.1.4.js');
 
 var MovieObserver = (function () {
   var playing = function (name) {
@@ -48,13 +48,12 @@ Movie.prototype.stop = function () {
   MovieObserver.stopped(this.name);
 };
 
-Movie.prototype.set = function() {
-    this.name = value;
-    
+Movie.prototype.set = function(key, value) {
+    this.attributes[key] = value;
 };
 
-Movie.prototype.get = function() {
-    this.name = value;
+Movie.prototype.get = function(key) {
+    return this.attributes[key];
 };
 
 Movie.prototype.down = function () {

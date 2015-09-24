@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "dependencies": {
-    "jquery": "^2.1.4",
-    "requirejs": "^2.1.20"
+  "dependencies": {
+    "jquery": "^2.1.4"
   },
   "devDependencies": {},
   "author": "chino",
-  "license": "ISC",
+  "license": "ISC"
 }
   
